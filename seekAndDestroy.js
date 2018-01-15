@@ -1,7 +1,7 @@
+//Create the function "destroyer" and pass the argument "arr" as the parameters.
 function destroyer(arr) {
 //create a variable, args, that uses the constructor, Array, that takes arguments that are passed into the function and removes mathing values found within "arr," starting at index 1, and beyond. 
   var args = Array.from(arguments).slice(1);
-  //var p = 
   //iterate through each item in the array, incrementing your counter by 1 each time, checking for matching values found in arr that are also found in args
   for (var i = 0; i < arr.length; i++) {
  //within the first for-loop, perform another loop that looks at each value within "args," looking for matches in both value and type within "arr." If there is a match, delete the matched value found within "arr."  
@@ -13,9 +13,8 @@ function destroyer(arr) {
   }
   return arr.filter(Boolean);
 }
-
+//Invoke the function "destroyer" and pass the array and the following parameters.
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
-
 
 /*
 You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
